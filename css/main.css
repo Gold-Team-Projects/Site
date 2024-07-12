@@ -1,6 +1,7 @@
 :root {
     --text: white;
     --accent: gold;
+    --background: rgb(1, 1, 12);
 }
 
 html {
@@ -16,8 +17,12 @@ body {
     color: var(--text);
     display: flex;
     flex-direction: column;
-    background: black;
+    background: var(--background);
     font-family: monospace;
+}
+
+a {
+    font-size: 15px;
 }
 
 h4 { 
@@ -30,9 +35,28 @@ h5 {
     padding-top: 5px;
 }
 
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+.horizontal > .panel {
+    flex: 1;
+}
+.horizontal > a {
+    padding-right: 15px;
+}
+
 nav {
     background: rgb(39, 39, 39);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+nav > * {
+    margin: 12px 0 12px 10px;
+}
+
 .top {
     display: flex;
     flex-direction: column;
@@ -54,10 +78,10 @@ h3.subtitle, h1.title {
 }
 
 .panel {
-    border: solid;
-    border-image: linear-gradient(gold,black,gold ) 1;
-    border-width: 2px;
-    border-radius: 10px;
+    border: 2px solid transparent;
+    background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(gold, var(--background)) border-box;
+
+    border-radius: 20px;
     margin: 2.5%;
     display: flex;
     flex-direction: column;
@@ -77,11 +101,11 @@ h3.subtitle, h1.title {
 
 @keyframes hover-shadow {
     0% { box-shadow: none; }
-    100% { box-shadow: 0 0 10px 4.5px white; }
+    100% { box-shadow: 0 0 10px 4.5px grey; }
 }
 
-.clickable {
+.clickable:hover {
     cursor: pointer;
     animation: hover-shadow 0.2s;
-    box-shadow: 0 20px 35px black;
+    box-shadow: 0 0 15px 3px grey;
 }
