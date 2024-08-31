@@ -1,3 +1,1 @@
-function redirect(path) {
-    location.replace(path);
-}
+function redirect(link) { window.location.href = link; }

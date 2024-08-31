@@ -1,0 +1,42 @@
+.black-background { background: black; }
+.black { color: black; }
+.red-background { background: red; }
+.red { color: red; }
+.red-glow { text-shadow: red 1px 0 16px; }
+.silver { color: #C0C0C0; }
+
+.centered { align-self: center;}
+.center { align-items: center; }
+.column { flex-direction: column; }
+.row { flex-direction: row; }
+
+.monospace { font-family: monospace; }
+
+.flex { display: flex; }
+
+.html {
+    min-height: 100%;
+}
+
+.body {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    min-height: 100%;
+}
+
+.heading {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 85px;
+}
+
+.heading-2 {
+    font-size: 85px;
+    margin: 20px;
+    margin-top: 60px;
+}

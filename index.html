@@ -1,56 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="css/main.css">
         <script src="js/main.js"></script>
     </head>
     <body>
         <nav>
-            <h4>Gold Team</h4>
-            <div class="horizontal">
-                <a href="/solutions">Solutions</a>
-                <a href="/members">Members</a>
-            </div>
-        </nav>
-        <div class="top">
-            <h1 class="title">Gold Team</h1>
-            <h3 class="subtitle">4 Solutions | 1 Member</h3>
-        </div>
-        <main>
-            <div class="panel">
-                <h4>Who we are</h4>
-                <p>The <b>Gold Team</b> is a development and penetration testing group. We create applications for all kinds of people.</p>
-            </div>
-            <div class="horizontal">
-                <div class="panel">
-                    <h4>Solutions:</h4>
-                    <div class="panel clickable" onclick="redirect('/solutions/tourmaline')">
-                        <h5 style="color: darkgreen">Tourmaline</h5>
-                        <p>A tunable all-in-one directory enumeration tool.</p>
-                    </div>
-                    <div class="panel clickable" onclick="redirect('/solutions/garnet')">
-                        <h5 style="color: darkred">Garnet</h5>
-                        <p>A CDN-WAN hybrid chat network.</p>
-                    </div>
-                    <div class="panel clickable" onclick="redirect('/solutions/opal')">
-                        <h5 style="color: darkblue">Opal</h5>
-                        <p>A modular, embeddable and open-source chatbot.</p>
-                    </div>
-                    <div class="panel clickable" onclick="redirect('/solutions/azotic-topaz')">
-                        <h5 style="color: darkgoldenrod">Azotic Topaz</h5>
-                        <p>A virtual and customizable workspace.</p>
-                    </div>
-                </div>
-                <div class="panel">
-                    <h4>Members:</h4>
-                    <div class="panel clickable">
-                        <h5>Jewels</h5>
-                        <p>Lead Developer</p>
-                    </div>
 
+        </nav>
+        <main>
+            <h1 class="heading">G O L D &nbsp T E A M</h1>
+            <h2 class="subtitle">4 Solutions | 1 Member | 0 Users</h2>
+            <div id="solutions">
+                <h3>Solutions</h3>
+                <div style="display: flex; flex-direction: row; width: 98%;">
+                    <div class="panel" onclick="redirect('solutions/opal')">
+                        <h4 class="opal" onclick="redirect('solutions/opal')">Opal</h4>
+                        <p>A modular, open-source framework for creating artificial brains in Python.</p>
+                    </div>
+                    <div class="panel" onclick="redirect('solutions/az-topaz')">
+                        <h4 class="az-topaz" onclick="redirect('solutions/az-topaz')">Azotic Topaz</h4>
+                        <p>A desktop application to create virtual workspaces.</p>
+                    </div>
+                    <div class="panel" onclick="redirect('solutions/garnet')">
+                        <h4 class="garnet" onclick="redirect('solutions/garnet')">Garnet</h4>
+                        <p>A CDN-WAN hybrid network.</p>
+                    </div>
+                    <div class="panel" onclick="redirect('solutions/tourmaline')">
+                        <h4 class="tourmaline" onclick="redirect('solutions/tourmaline')">Tourmaline</h4>
+                        <p>Tourmaline is an all-in-one directory enumeration toolkit for ethical hacking.</p>
+                    </div>
                 </div>
             </div>
-            
         </main>
+        <footer>
+
+        </footer>
     </body>
 </html>
