@@ -1,44 +1,87 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="./css/main.css">
-        <script src="./js/main.js"></script>
-    </head>
-    <body>
-        <nav>
-
-        </nav>
-        <main>
-            <h1 class="heading">G O L D &nbsp T E A M</h1>
-            <h2 class="subtitle">4 Solutions | 1 Member | 0 Users</h2>
-            <div id="solutions">
-                <h3>Solutions</h3>
-                <div style="display: flex; flex-direction: row; width: 98%;">
-                    <div class="panel" onclick="redirect('solutions/opal')">
-                        <h4 class="opal" onclick="redirect('solutions/opal')">Opal</h4>
-                        <p>A modular, open-source framework for creating artificial brains in Python.</p>
-                    </div>
-                    <div class="panel" onclick="redirect('solutions/az-topaz')">
-                        <h4 class="az-topaz" onclick="redirect('solutions/az-topaz')">Azotic Topaz</h4>
-                        <p>A desktop application to create virtual workspaces.</p>
-                    </div>
-                    <div class="panel" onclick="redirect('solutions/garnet')">
-                        <h4 class="garnet" onclick="redirect('solutions/garnet')">Garnet</h4>
-                        <p>A CDN-WAN hybrid network.</p>
-                    </div>
-                    <div class="panel" onclick="redirect('solutions/tourmaline')">
-                        <h4 class="tourmaline" onclick="redirect('solutions/tourmaline')">Tourmaline</h4>
-                        <p>Tourmaline is an all-in-one directory enumeration toolkit for ethical hacking.</p>
-                    </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Team</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Gold Team</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Our Team</a>
+                                <a class="dropdown-item" href="#">Our Mission</a>
+                                <a class="dropdown-item" href="#">Our Values</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </main>
-        <footer>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Gold Team</h1>
+                <p>We're a team of developers passionate about creating innovative solutions.</p>
+                <button>Learn More</button>
+            </div>
+        </section>
+        <section class="features">
+            <h2>Our Features</h2>
+            <ul>
+                <li>
+                    <i class="fas fa-code"></i>
+                    <h3>Clean Code</h3>
+                    <p>We write clean, efficient, and well-documented code.</p>
+                </li>
+                <li>
+                    <i class="fas fa-rocket"></i>
+                    <h3>Fast Development</h3>
+                    <p>We use agile methodologies to deliver projects quickly and efficiently.</p>
+                </li>
+                <li>
+                    <i class="fas fa-users"></i>
+                    <h3>Collaborative Team</h3>
+                    <p>We work together as a team to deliver high-quality solutions.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="call-to-action">
+            <h2>Get in Touch</h2>
+            <p>Ready to start your next project? Contact us today!</p>
+            <button>Contact Us</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gold Team</p>
+    </footer>
 
-        </footer>
-    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
 </html>
