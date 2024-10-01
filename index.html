@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">Gold Team</a>
+                <a class="navbar-brand" href="./"> <i class='bx bx-code-curly' ></i> Gold Team</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="./"><i class='bx bxs-home'></i> Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 About
                             </a>
@@ -30,12 +31,12 @@
                                 <a class="dropdown-item" href="#">Our Mission</a>
                                 <a class="dropdown-item" href="#">Our Values</a>
                             </div>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class='bx bxs-message-rounded-detail'></i> Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="#"><i class='bx bxl-github' ></i> GitHub</a>
                         </li>
                     </ul>
                 </div>
@@ -45,9 +46,11 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>Welcome to Gold Team</h1>
-                <p>We're a team of developers passionate about creating innovative solutions.</p>
-                <button>Learn More</button>
+                <div class="container1">
+                    <h1>Welcome to Gold Team</h1>
+                    <p>We are a development group that creates tools across the spectrum for all kinds of people.</p>
+                    <button>Learn More</button>
+                </div>
             </div>
         </section>
         <section class="features">
