@@ -4,6 +4,20 @@ body {
     padding: 0;
 }
 
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
 .hero {
     background-image: url('../img/code1.jpg');
@@ -54,6 +68,9 @@ body {
 .features {
     background-color: #f7f7f7;
     padding: 2em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .features ul {
@@ -120,3 +137,53 @@ footer {
     color: #fff; 
 
 }
+
+.our-solutions {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+
+.our-solutions h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    margin: 20px;
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project a {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project a:hover {
+    background-color: #3e8e41;
+}
+
+.modal-dialog-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="./"> <i class='bx bx-code-curly' ></i> Gold Team</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,10 +33,10 @@
                             </div>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class='bx bxs-message-rounded-detail'></i> Contact</a>
+                            <a class="nav-link" href="#" id="contact-link"><i class='bx bxs-message-rounded-detail'></i> Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class='bx bxl-github' ></i> GitHub</a>
+                            <a class="nav-link" href="https://github.com/Gold-Team-Projects"><i class='bx bxl-github' ></i> GitHub</a>
                         </li>
                     </ul>
                 </div>
@@ -73,10 +73,71 @@
                 </li>
             </ul>
         </section>
+
+        <!-- <section class="our-solutions">
+            <h2>Our Solutions</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="https://github.com/your-username/project1" target="_blank" class="btn btn-primary">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="https://github.com/your-username/project2" target="_blank" class="btn btn-primary">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="https://github.com/your-username/project3" target="_blank" class="btn btn-primary">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Project 4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="https://github.com/your-username/project4" target="_blank" class="btn btn-primary">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Project 5</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="https://github.com/your-username/project5" target="_blank" class="btn btn-primary">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Project 6</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="https://github.com/your-username/project6" target="_blank" class="btn btn-primary">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Project 7</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="https://github.com/your-username/project7" target="_blank" class="btn btn-primary">View on GitHub</a>
+                </div>
+            </div>
+        </section> -->
+
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="contactModalLabel">Get in Touch</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p id="modal-message"></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         <section class="call-to-action">
             <h2>Get in Touch</h2>
             <p>Ready to start your next project? Contact us today!</p>
-            <button>Contact Us</button>
+            <button id="contact-btn">Contact Us</button>
         </section>
     </main>
     <footer>
@@ -85,6 +146,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 </html>
