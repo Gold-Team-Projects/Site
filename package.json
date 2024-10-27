@@ -4,6 +4,7 @@
   "description": "The Gold Team website",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "nodemon index.js"
   },
   "author": "Gold Team",
