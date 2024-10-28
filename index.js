@@ -7,4 +7,4 @@ app.get('/', (req, res) => {
 
 app.use(express.static("src"))
 
-app.listen(process.env.PORT | 8080, () => console.log(`Running on port ${process.env.PORT | 8080}`))
+app.listen(process.env.PORT | 8080, () => console.log(`Running on port ${process.env.PORT || 80}`))
