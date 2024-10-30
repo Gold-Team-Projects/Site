@@ -1,0 +1,19 @@
+h1 {
+    font-size: 4em;
+    color: blue;
+    margin: 10% 5% 1% 5%;
+    font-family: Andale Mono, monospace;
+}
+h2 {
+    font-size: 2em;
+    color: purple;
+    margin: 1% 5% 10% 4%;
+    font-family: Andale Mono, monospace;
+}
+.top {
+    background-image: url('../img/jewel.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55%;
+    height: calc(100% - 60px);
+}
