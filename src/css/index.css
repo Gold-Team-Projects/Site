@@ -10,6 +10,10 @@ h2 {
     margin: 1% 5% 10% 4%;
     font-family: Andale Mono, monospace;
 }
+h3 {
+    font-size: 1.7em;
+    color: gold;
+}
 .top {
     background-image: url('../img/jewel.webp');
     background-repeat: no-repeat;
@@ -18,7 +22,7 @@ h2 {
     height: calc(100% - 60px);
 }
 
-.carousel {
+#carousel {
     height: auto;
     width: 98%;
     margin: 0;
@@ -27,8 +31,35 @@ h2 {
     flex-direction: row;
 }
 .card {
-    height: 90%;
-    width: 90%;
+    height: 70vh;
+    width: 90vw;
     margin: 5%;
+    background: rgb(36, 36, 36);
+    flex-direction: row;
+    justify-content: left;
+    display: none;
 }
-.card .active 
+.card .primary {
+    width: calc(60% - 200px);
+}
+.card .secondary {
+    width: 200px;
+}
+.card h4 {
+    font-size: 1.4em;
+    color: purple;
+    margin: 1% 5% 1% 5%;
+    font-family: Andale Mono, monospace;
+}
+
+#carousel-prev, #carousel-next {
+    height: 25px;
+    width: 20%;
+    border: 2px solid grey;
+    border-radius: 20px;
+    background: black;
+    color: purple;
+}
+#carousel-prev:hover, #carousel-next:hover {
+    color: gold;
+}
