@@ -7,5 +7,4 @@ app.get('/', (req, res) => {
 
 app.use(express.static("src"))
 
-try { app.listen(80, () => console.log("Running...")) }
-catch (err) { app.listen(8080, () => console.log("Running...")) }
+app.listen(process.env.PORT | 8080, () => console.log(`Running on port ${process.env.PORT || 80}`))
