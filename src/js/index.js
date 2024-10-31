@@ -23,8 +23,8 @@ function start() {
 
 function updateGallery() {
     gallery.style.transform = `perspective(1000px) rotateY(${x}deg)`;
-    time = setTimeout(() => {
-        x = x - 45;
+    timer = setTimeout(() => {
+        x = x - deg;
         updateGallery();
     }, 2000);
 }
