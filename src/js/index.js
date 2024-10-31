@@ -26,7 +26,7 @@ function updateGallery() {
     timer = setTimeout(() => {
         x = x - deg;
         updateGallery();
-    }, 2000);
+    }, 8000);
 }
 
 start();

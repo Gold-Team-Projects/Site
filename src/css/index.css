@@ -4,12 +4,14 @@
 
 h1 {
     font-size: 4em;
+    text-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
     color: blue;
     margin: 10% 5% 1% 5%;
     font-family: Andale Mono, monospace;
 }
 h2 {
     font-size: 2.3em;
+    text-shadow: 0 0 10px purple;
     color: purple;
     margin: 1% 5% 7.5% 4%;
     font-family: Andale Mono, monospace;
@@ -41,8 +43,8 @@ h3 {
 
 #gallery {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 250px;
     transform-style: preserve-3d;
     transform:  perspective(1000px) rotateY(0deg);
     transition: transform 0.7s;
@@ -55,7 +57,7 @@ h3 {
     height: 100%;
     transform: rotateY(calc(var(--i) * var(--gallery-deg))) translateZ(400px);
 }
-#gallery span div {
+#gallery span .card {
     position: absolute;
     left: 0;
     top: 0;
@@ -66,6 +68,22 @@ h3 {
     flex-direction: column;
     height: 100%;
     background: rgb(66, 66, 66);
+    font-size: 0.5em;
+}
+#gallery span .card .flex-horizontal {
+    width: 100%;
+    justify-content: space-between
+}
+#gallery span .card .flex-horizontal p {
+    font-size: 0.5em;
+    width: fit-content;
+    margin: 0.2em 1em;
+}
+#gallery span .card img {
+    width: 95%;
+    height: 40%;
+    margin: 2.5%;
+    border-radius: 15px;
 }
 
 #gallery-prev, #gallery-next {
