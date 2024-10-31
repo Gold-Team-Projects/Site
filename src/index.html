@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
-        <script src="js/index.js" defer></script>
         <title>Gold Team</title>
     </head>
     <body>
@@ -29,25 +28,20 @@
         <div class="main-content">
             <div class="section">
                 <h3>Projects</h3>
-                <div id="carousel">
-                    <div class="card">
-                        <div class="primary">
-                            <h4>Garnet</h4>
-                            <p>some text about it</p>
-                        </div>
-                        <div class="secondary">
-                            <ul>
-                                <li>Created by: Jewels</li>
-                                <li>Users: 0</li>
-                                <li>Status: In progess</li>
-                                <li>Version: 0.0</li>
-                            </ul>
-                        </div>
+                <div class="gallery-wrapper">
+                    <div id="gallery">
+                        <span style="--i: 1">
+                            <p>hello</p>
+                        </span>
+                        <span style="--i: 2">
+                            <p>hello 2</p>
+                        </span>
                     </div>
                 </div>
+                
                 <div class="flex-horizontal">
-                    <button id="carousel-prev">Previous</button>
-                    <button id="carousel-next">Next</button>
+                    <button id="gallery-prev">Previous</button>
+                    <button id="gallery-next">Next</button>
                 </div>
             </div>
             <div class="section">
@@ -58,5 +52,6 @@
         <footer>
             <p>Gold Team &copy; 2024</p>
         </footer>
+        <script src="js/index.js"></script>
     </body>
 </html>
