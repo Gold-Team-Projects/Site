@@ -7,22 +7,22 @@ let timer;
 let x = 0;
 
 function start() {
-    updateGallery(Math.round((cards.length - 2) / 2))
+    updateGallery(0)
 
     prev.addEventListener('click', () => {
         if (x > 0) {
-            updateGallery(x - 1);
+            updateGallery(x - 1, false);
         }
     });
 
     next.addEventListener('click', () => {
-        if (x < cards.length - 3) {
-            updateGallery(x + 1);
+        if (x < cards.length - 1) {
+            updateGallery(x + 1, true);
         }
     });
 }
 
-function updateGallery(y) {
+function updateGallery(y, forwards) {
     cards[x].classList.remove('active');
     cards[y].classList.add('active');
     gallery.scrollTo({
