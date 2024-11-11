@@ -26,7 +26,7 @@ function updateGallery(y, forwards) {
     cards[x].classList.remove('active');
     cards[y].classList.add('active');
     gallery.scrollTo({
-        left: cards[y].offsetLeft,
+        left: cards[y].offsetLeft - 20,
         behavior: 'smooth'
     });
     x = y
