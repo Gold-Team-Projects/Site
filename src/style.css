@@ -16,12 +16,14 @@ nav
 {
     width: 100%;
     height: 80px;
+    z-index: 100;
     padding: 10px;
     top:0px;
-    z-index: 100;
     left: 0px;
-    background: rgb(50, 50, 50);
-    position: fixed;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: transparent;
 }
 
 #navbtn
@@ -89,11 +91,14 @@ nav > ul > li > a:hover::before
 #header
 {
     width: 100%;
-    height: calc(100vh - 80px);
-    margin-top: 0px;
+    height: 100vh;
+    position:absolute;
+    top:0px;
+    left:0px;
     background: linear-gradient(45deg , rgba(30, 30, 30, 0.832),rgb(0,0,0)),url("images/headerimg.jpg");
     background-position: center center;
     background-size: cover;
+    z-index: 1;
     background-attachment: fixed;
 }
 
@@ -119,13 +124,12 @@ nav > ul > li > a:hover::before
     color:white;
     text-align:left;
     padding: 30px;
-    margin-top:80px;
 }
 
 #header>h1
 {
     font-size: 70px;
-    margin-top: 10vh;
+    margin-top: 20vh;
     font-family: "Josefin Sans", sans-serif;
     font-weight: lighter;
 
@@ -168,20 +172,24 @@ nav > ul > li > a:hover::before
     font-size: 20px;
     font-family: 'Exo 2',sans-serif;
     position: relative;
-    z-index: 0;
 }
 
-/* #header>button::before
+#header>button:hover
+{
+    box-shadow: 0px 0px 10px gold;
+}
+
+#header>button::before
 {
     content: ' ';
     display: block;
-    background: linear-gradient(90deg , rgb(118, 235, 235) , rgb(75, 86, 243) , rgb(168, 32, 209) , rgb(187, 18, 105) , rgb(225, 31, 31) );
+    /* background: linear-gradient(90deg , rgb(118, 235, 235) , rgb(75, 86, 243) , rgb(168, 32, 209) , rgb(187, 18, 105) , rgb(225, 31, 31) ); */
     position: absolute;
-    top: 20px;
-    left: 0px;
-    width: 10px;
-    height: 10px;
-    z-index: -1;
+    top: 0px;
+    right: 0px;
+    width: 0px;
+    height: 100%;
+    z-index: 0;
     border-radius: 50px;
     transition: 0.3s;
 }
@@ -192,7 +200,8 @@ nav > ul > li > a:hover::before
     left: 0px;
     height: 100%;
     width: 100%;
-} */
+    box-shadow: 0px 0px 10px gold;
+}
 
 
 
