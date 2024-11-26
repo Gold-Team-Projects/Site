@@ -8,7 +8,7 @@
 
 body
 {
-    background: rgb(30,30,30);
+    background: #313338;
     min-height: 200vh;
 }
 
@@ -17,10 +17,28 @@ nav
     width: 100%;
     height: 80px;
     padding: 10px;
-    position: fixed;
     top:0px;
     left: 0px;
-    background: rgb(30,30,30);
+    background: rgb(50, 50, 50);
+    position: fixed;
+}
+
+#navbtn
+{
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    transform: rotate(90deg);
+    background: #1c1d20;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 nav > ul > li
@@ -71,26 +89,152 @@ nav > ul > li > a:hover::before
 {
     width: 100%;
     height: calc(100vh - 80px);
-    margin-top: 80px;
+    margin-top: 0px;
+    background: linear-gradient(45deg , rgba(30, 30, 30, 0.832),rgb(0,0,0)),url("images/headerimg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #nav_name
 {
     float: left;
-    color: white;
     width: 200px;
-    height: 50px;
-    padding: 15px;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 18px;
+    height: 80px;
+    padding: 5px;
+    text-align: center;
+    transform: translateY(-10px);
 }
  
 #nav_name > img
 {
-    width: 45px;
-    height: 45px;
-    display: inline-block;
+    width: 150px;
+    height: 75px;
+}
+
+
+#header
+{
+    color:white;
+    text-align:left;
+    padding: 30px;
+    margin-top:80px;
+}
+
+#header>h1
+{
+    font-size: 70px;
+    margin-top: 10vh;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: lighter;
+
+}
+
+#header > img
+{
+    width: 300px;
+    height: 300px;
+    margin-top: 10vh;
     position: absolute;
-    right: 0px;
-    top: 5px;
+    left: calc(60% - 50px);
+    transform: rotate(20deg);
+}
+
+#header > p
+{
+    font-size:20px;
+    font-family:'Exo 2 ', sans-serif;
+    font-weight: lighter;
+    color: rgb(211, 211, 211);
+}
+
+#phone_logo
+{
+    display: none;
+}
+
+#header > button
+{
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+    font-family: 'Exo 2',sans-serif;
+    position: relative;
+    z-index: 0;
+}
+
+#header>button::before
+{
+    content: ' ';
+    display: block;
+    background: linear-gradient(90deg , rgb(118, 235, 235) , rgb(75, 86, 243) , rgb(168, 32, 209) , rgb(187, 18, 105) , rgb(225, 31, 31) );
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    z-index: -1;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+#header>button:hover::before
+{
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* responsive */
+
+@media only screen and (max-width:740px)
+{
+    nav > ul > li
+    {
+        display: none;
+    }
+
+    #header > h1
+    {
+        font-size: 40px;
+    }
+    #header > p
+    {
+        font-size: 18px;
+    }
+
+    #navbtn
+    {
+        display: block;
+    }
+
+    nav{
+        padding: 15px;
+    }
+
+    #phone_logo
+    {
+        display: block;
+        width: 150px;
+        height: 75px;
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 75px);
+    }
 }
