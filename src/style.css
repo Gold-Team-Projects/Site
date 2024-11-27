@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jaro:opsz@6..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jaro:opsz@6..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 
 *
 {
@@ -9,7 +11,7 @@
 body
 {
     background: #313338;
-    min-height: 300vh;
+    min-height: 500vh;
 }
 
 nav
@@ -205,7 +207,7 @@ nav > ul > li > a:hover::before
 #about
 {
     width:100%;
-    height:100vh;
+    height:80vh;
     padding: 30px;
     text-align: center;
 }
@@ -234,7 +236,77 @@ nav > ul > li > a:hover::before
 }
 
 
+#team
+{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 30px;
+}
 
+#team > div
+{
+    width: 25%;
+    height: 60vh;
+    background:#1e1f22;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 15px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+#diamond
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 10px;
+    left:10px;
+}
+
+
+.pfp
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid rgb(231, 225, 33);
+}
+
+#team > div > h1
+{
+    color: white;
+    text-align: center;
+    font-family: 'Josefin sans',sans-serif;
+}
+
+#team > div > h3
+{
+    font-size: 16px;
+    color: rgb(202, 202, 202);
+    font-family: 'Exo 2',sans-serif;
+}
+
+#team > div > p
+{
+    font-family: 'Roboto Mono',sans-serif;
+}
+
+.lighter
+{
+    font-size: 15px;
+
+}
+
+.location
+{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
 
 
 /* responsive */
@@ -272,5 +344,23 @@ nav > ul > li > a:hover::before
         position: absolute;
         top: 0px;
         left: calc(50% - 75px);
+    }
+
+    #about
+    {
+        height: 140vh;
+    }
+
+    #team > div
+    {
+        width: 90%;
+        display: block;
+        height: 65vh;
+    }
+
+    .location
+    {
+        bottom:15px;
+        left: 15px;
     }
 }
