@@ -9,7 +9,7 @@
 body
 {
     background: #313338;
-    min-height: 200vh;
+    min-height: 300vh;
 }
 
 nav
@@ -92,7 +92,7 @@ nav > ul > li > a:hover::before
 {
     width: 100%;
     height: 100vh;
-    position:absolute;
+    position:relative;
     top:0px;
     left:0px;
     background: linear-gradient(45deg , rgba(30, 30, 30, 0.832),rgb(0,0,0)),url("images/headerimg.jpg");
@@ -144,7 +144,7 @@ nav > ul > li > a:hover::before
     transform: rotate(20deg);
 }
 
-#header > p
+.light_text
 {
     font-size:20px;
     font-family:'Exo 2 ', sans-serif;
@@ -202,9 +202,36 @@ nav > ul > li > a:hover::before
     box-shadow: 0px 0px 10px gold;
 }
 
+#about
+{
+    width:100%;
+    height:100vh;
+    padding: 30px;
+    text-align: center;
+}
 
 
+.headtext
+{
+    color: white;
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 50px;
+    position: relative;
+}
 
+.headtext::before
+{
+    content: ' ';
+    display: block;
+    width: 60px;
+    height: 10px;
+    background: linear-gradient(90deg , rgb(118, 235, 235) , rgb(75, 86, 243) , rgb(168, 32, 209) , rgb(187, 18, 105) , rgb(225, 31, 31) );
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 30px);
+    transform: translateY(10px);
+    border-radius: 50px;
+}
 
 
 
