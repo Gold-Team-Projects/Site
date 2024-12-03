@@ -332,7 +332,7 @@ nav > ul > li > a:hover::before
   
 #carousel {
     display: flex; 
-    animation: scroll 25s linear infinite;
+    animation: scroll 50s linear infinite;
 }
   
 .slide {
@@ -503,7 +503,7 @@ nav > ul > li > a:hover::before
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-400%);
     }
 }
   
