@@ -331,7 +331,7 @@ nav > ul > li > a:hover::before
   
 #carousel {
     display: flex; 
-    animation: scroll 30s linear infinite;
+    animation: scroll 25s linear infinite;
 }
   
 .slide {
