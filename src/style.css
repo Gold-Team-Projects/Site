@@ -320,7 +320,7 @@ nav > ul > li > a:hover::before
     height: 100vh;
     text-align: center;
     padding: 15px;
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
 
 #carousel-container {
@@ -368,7 +368,14 @@ nav > ul > li > a:hover::before
     border-radius: 10px;
     font-size: 20px;
     background: #1c1c9b;
+    transition: 0.3s;
+    cursor: pointer;
     color: var(--lightwhite);
+}
+
+#openproj:hover
+{
+    background: #151580;
 }
 
 #gitbutton
@@ -381,6 +388,13 @@ nav > ul > li > a:hover::before
     font-size: 20px;
     background: #602d84;
     color: var(--lightwhite);
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+#gitbutton:hover
+{
+    background:#4b2269 ;
 }
 
 .slide:first-child
