@@ -165,7 +165,7 @@ nav > ul > li > a:hover::before
 
 #header > button
 {
-    width: 150px;
+    min-width: 150px;
     height: 50px;
     background: linear-gradient(90deg , rgb(118, 235, 235) , rgb(75, 86, 243) , rgb(168, 32, 209) , rgb(187, 18, 105) , rgb(225, 31, 31) );
     border-radius: 50px;
